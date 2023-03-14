@@ -60,7 +60,6 @@
 
 #root {
   font-family: Roboto, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  max-width: 1280px;
   margin: 0 auto;
   padding: 0;
 }
@@ -77,5 +76,11 @@ body {
 
 ul {
 	list-style: none;
+}
+
+.divider {
+  height: 1px;
+  width: 100vw;
+  background-color: var(--stroke);
 }
 
