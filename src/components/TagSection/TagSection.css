@@ -1,0 +1,39 @@
+.tag-section {
+    position:relative;
+    padding-block:35px;
+    
+}
+
+.tag-section .wrapper {
+display:flex;
+    width:100%;
+    gap: 40px;
+    overflow:hidden;
+}
+
+.tag-group {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.tag-nav {
+    color: var(--primary);
+    background-color: var(--white);
+    position:absolute;
+    top: 50%;
+    border-radius: 12px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.tag-nav.right {
+    right: 0;
+}

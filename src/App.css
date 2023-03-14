@@ -84,3 +84,9 @@ ul {
   background-color: var(--stroke);
 }
 
+main {
+  margin: 0 auto;
+	max-width: 1280px;
+  padding-inline: 20px;
+}
+

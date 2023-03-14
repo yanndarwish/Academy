@@ -1,0 +1,15 @@
+.tag {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:65px;
+    width: fit-content;
+    padding-inline: 32px;
+    padding-block: 23px;
+    border-radius: 12px;
+    background-color: var(--gray);
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
