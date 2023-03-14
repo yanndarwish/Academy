@@ -10,20 +10,23 @@ export interface IHeaderProps {}
 
 export default function Header(props: IHeaderProps) {
 	const sideBarRef = useRef<HTMLDivElement | null>(null)
+	const backdropRef = useRef<HTMLDivElement | null>(null)
 
 	const handleClick = () => {
 		const isOpen = sideBarRef.current?.classList.contains("open")
-		if (isOpen) {
 
+		if (isOpen ) {
 			sideBarRef.current?.classList.remove("open")
-		} else {
+			backdropRef.current?.classList.remove("open")
+		} else if (!isOpen) {
 			sideBarRef.current?.classList.add("open")
-
+			backdropRef.current?.classList.add("open")
 		}
 	}
 
 	return (
 		<header>
+			<div ref={backdropRef} className="backdrop" onClick={() => handleClick()}></div>
 			<div className="container">
 				<div className="left">
 					<a href="" className="logo">

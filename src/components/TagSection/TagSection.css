@@ -32,6 +32,7 @@ display:flex;
     -moz-border-radius: 12px;
     -ms-border-radius: 12px;
     -o-border-radius: 12px;
+    box-shadow: 5px 5px 5px var(--dark-25);
 }
 
 .tag-nav.right {

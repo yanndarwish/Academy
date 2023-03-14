@@ -6,6 +6,7 @@ header {
 }
 
 header .container {
+	position:relative;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -79,17 +80,15 @@ header .container {
         top:0;
         left: 0;
         bottom:0;
+		z-index:100;
         width: max(40vw, 400px);
         height: 100%;
         padding:20px;
+		padding-block:35px;
 		flex-direction: column-reverse;
         justify-content: flex-end;
         background-color: white;
 	}
-
-    .open {
-        display:flex;
-    }
 
     .sidebar nav {
         height:100%;
@@ -108,11 +107,26 @@ header .container {
     .right {
         width:100%;
         flex-direction: column-reverse;
-        gap: 20px;
+        gap: 35px;
     }
 
     .separator {
         width: 100%;
         height: 1px;
+    }
+
+	.backdrop {
+		display:none;
+		z-index:99;
+		position:fixed;
+		top:0;
+		left: 0;
+		bottom:0;
+		right: 0;
+		background-color: var(--dark-50);
+	}
+
+	.open {
+        display:flex;
     }
 }
