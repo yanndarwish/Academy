@@ -1,5 +1,6 @@
 import './App.css'
 import Header from './components/Header/Header'
+import Hero from './components/Hero/Hero'
 import TagSection from './components/TagSection/TagSection'
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <main>
 
       <TagSection />
+      <Hero />
       </main>
     </div>
   )

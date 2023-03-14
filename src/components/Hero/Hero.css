@@ -1,0 +1,109 @@
+.hero {
+	margin-block: 80px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.hero .left {
+	z-index: 10;
+}
+
+.hero-text {
+	margin-top: 80px;
+	font-weight: 900;
+	font-size: 40px;
+	max-width: 620px;
+	line-height: 68px;
+}
+
+.hero-text span {
+	background: -webkit-linear-gradient(#b176f2, #fac1f1);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.cta-wrapper {
+	margin-block: 70px;
+	position: relative;
+	display: flex;
+	gap: 20px;
+}
+
+.cta-wrapper .icons {
+	position: relative;
+}
+
+#arrow-left {
+	position: absolute;
+	top: -90px;
+	left: -60px;
+}
+
+#progress {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+}
+
+#arrow-right {
+	position: absolute;
+	top: 50%;
+	right: -150px;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+}
+
+#booked {
+	position: absolute;
+	top: -40px;
+	right: -200px;
+}
+
+.hero .right {
+	position: relative;
+	flex: 1;
+	justify-content: flex-end;
+}
+
+.right .ellipse {
+	z-index: -2;
+	width: 500px;
+	height: 500px;
+	background: #e671e5;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+
+#girl {
+	position: absolute;
+	z-index: 2;
+	top: 40px;
+	right: 30px;
+	width: 600px;
+}
+
+#shadow {
+	position: absolute;
+	z-index: -1;
+	top: -20px;
+	right: -80px;
+	width: 800px;
+}
+
+@media screen and (max-width: 768px) {
+	.hero {
+		gap: 32px;
+		margin-block: 35px;
+	}
+}
