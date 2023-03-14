@@ -1,61 +1,83 @@
 .input-wrapper {
-    position:relative;
-    display:flex;
-    align-items: center;
-    gap:16px;
-    height:64px;
-    padding-left:16px;
-    padding-right:20px;
-    padding-block:8px;
-    border-radius:12px;
-    color: var(--dark-25);
-    background-color: var(--gray);
-    -webkit-border-radius:12px;
-    -moz-border-radius:12px;
-    -ms-border-radius:12px;
-    -o-border-radius:12px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	height: 64px;
+	padding-left: 16px;
+	padding-right: 20px;
+	padding-block: 8px;
+	border-radius: 12px;
+	color: var(--dark-25);
+	background-color: var(--gray);
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	-ms-border-radius: 12px;
+	-o-border-radius: 12px;
 }
 
 .input-wrapper > input {
-    border: none;
-    outline: none;
-    font-size:13px;
-    font-weight:500;
-    background-color: inherit;
+	border: none;
+	outline: none;
+	font-size: 13px;
+	font-weight: 500;
+	background-color: inherit;
 }
 
-.input-wrapper > .dropdown-menu{
-    height:0;
-    overflow:hidden;
-    position:absolute;
-    top: 50px;
-    left: 0;
-    padding-inline:16px;
-    border-radius:12px;
-    transition: 300ms;
-    background-color: var(--gray);
-    -webkit-transition: 300ms;
-    -moz-transition: 300ms;
-    -ms-transition: 300ms;
-    -o-transition: 300ms;
+.input-wrapper > .dropdown-menu {
+	height: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 50px;
+	left: 0;
+	padding-inline: 16px;
+	border-radius: 12px;
+	transition: 300ms;
+	background-color: var(--gray);
+	-webkit-transition: 300ms;
+	-moz-transition: 300ms;
+	-ms-transition: 300ms;
+	-o-transition: 300ms;
 }
 
 .input-wrapper .button:hover + .dropdown-menu,
 .dropdown-menu:hover {
-    padding-top:16px;
-    height:158px
+	padding-top: 16px;
+	height: 158px;
 }
 
 .menu-item {
-    padding-block: 8px;
-    transition: 300ms;
-    -webkit-transition: 300ms;
-    -moz-transition: 300ms;
-    -ms-transition: 300ms;
-    -o-transition: 300ms;
+	padding-block: 8px;
+	transition: 300ms;
+	-webkit-transition: 300ms;
+	-moz-transition: 300ms;
+	-ms-transition: 300ms;
+	-o-transition: 300ms;
 }
 
 .menu-item:hover {
-    cursor: pointer;
-    color:black;
+	cursor: pointer;
+	color: black;
+}
+
+@media screen and (max-width: 1220px) {
+	.input-wrapper {
+		width: fit-content;
+	}
+
+	.input-wrapper > input {
+		display:none;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+   .input-wrapper {
+		width: 100%;
+        justify-content: space-between;
+	}
+
+	.input-wrapper > input {
+		display:block;
+	}
 }
