@@ -6,6 +6,10 @@ import progress from "../../assets/hero/chart.png"
 import booked from "../../assets/hero/advertising.png"
 import girl from "../../assets/hero/1-removebg 1.png"
 import shadow from "../../assets/hero/1-removebg 2.png"
+import ellipse from "../../assets/hero/Ellipse 4.png"
+import journal from "../../assets/hero/Group-2.png"
+import lightbulb from "../../assets/hero/Group.png"
+import triangle from "../../assets/hero/Polygon 1.png"
 
 import "./Hero.css"
 
@@ -35,10 +39,21 @@ const Hero = (props: IHeroProps) => {
 				</div>
 			</div>
 			<div className="right">
-				<div className="ellipse"></div>
-				<img src={shadow} alt="icon" id="shadow" />
-				<img src={girl} alt="icon" id="girl" />
+				<div className="ellipse rotating">
+					<img src={ellipse} alt="icon" id="ellipse" className="hero-icon" />
+					<img src={journal} alt="icon" id="journal" className="hero-icon" />
+					<img
+						src={lightbulb}
+						alt="icon"
+						id="lightbulb"
+						className="hero-icon"
+					/>
+					<img src={triangle} alt="icon" id="triangle" className="hero-icon" />
+				</div>
+				<p className="hero-highlight">UX & UI</p>
 
+				<img src={shadow} alt="icon" id="shadow" className="hero-icon" />
+				<img src={girl} alt="icon" id="girl" className="hero-icon" />
 			</div>
 		</div>
 	)
