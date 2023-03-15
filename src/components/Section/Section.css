@@ -1,0 +1,30 @@
+.section-container {
+    display:flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.section-header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-title {
+    text-transform:uppercase;
+    font-size: var(--h4);
+    font-weight:600;
+}
+
+.dot {
+    position:absolute;
+    left: 10px;
+    background-color: var(--primary);
+    height:4px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
