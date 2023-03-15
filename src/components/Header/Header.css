@@ -63,6 +63,14 @@ header .container {
 	.nav-list {
 		width: 40vw;
 	}
+
+	header .input-wrapper {
+		width: fit-content;
+	}
+
+	header .input-wrapper > input {
+		display:none;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -103,6 +111,15 @@ header .container {
     .nav-item {
         font-size: 32px;
     }
+
+	header .input-wrapper {
+		width: 100%;
+        justify-content: space-between;
+	}
+
+	header .input-wrapper > input {
+		display:block;
+	}
 
     .right {
         width:100%;

@@ -1,6 +1,7 @@
 import './App.css'
 import Header from './components/Header/Header'
 import Hero from './components/Hero/Hero'
+import SearchSection from './components/SearchSection/SearchSection'
 import TagSection from './components/TagSection/TagSection'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
 
       <TagSection />
       <Hero />
+      <SearchSection />
       </main>
     </div>
   )
