@@ -1,0 +1,69 @@
+.newsletter-section {
+	display: flex;
+	height: 275px;
+	margin-block: 150px;
+	margin-left: -20px;
+	padding-left: 10px;
+	padding-block: 35px;
+	border-radius: 0px 40px 40px 0px;
+	background: url(../../assets//img/academy/background-2.png);
+	background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    gap: 24px;
+}
+
+.newsletter-section .left {
+	display: flex;
+	align-items: center;
+}
+
+.newsletter-text {
+	font-size: 36px;
+	font-weight: 900;
+	line-height: 68px;
+	letter-spacing: 0px;
+	text-align: left;
+}
+
+.newsletter-text span {
+	color: #5a69f2;
+	text-transform: capitalize;
+}
+
+.newsletter-section .right {
+	display: flex;
+	align-items: center;
+	padding-right: 20px;
+    height:100%;
+}
+
+@media screen and (max-width: 768px) {
+	.newsletter-section {
+		flex-direction: column;
+        height:350px
+	}
+
+	.newsletter-text {
+		text-align: center;
+	}
+
+	.newsletter-text span {
+		color: var(--secondary);
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.newsletter-section {
+		flex-direction: column;
+        height:450px
+	}
+
+	.newsletter-text {
+		text-align: center;
+	}
+
+	.newsletter-text span {
+		color: var(--secondary);
+	}
+}
