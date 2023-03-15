@@ -1,0 +1,64 @@
+.instructor-section {
+    display:flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    align-items: center;
+    gap:32px;
+    margin-block: 150px;
+}
+
+.instructor-section > * {
+    flex: 1;
+}
+
+.instructor-text {
+    font-weight: 900;
+	font-size: 36px;
+	max-width: 620px;
+	line-height: 68px;
+}
+
+.instructor-section .left {
+    max-width: 450px;
+    text-transform: capitalize;
+}
+
+.instructor-section .left p {
+    max-width: 450px;
+    text-transform: capitalize;
+}
+
+#ad {
+    position:absolute;
+    top:-40px;
+    left:250px
+}
+.instructor-section .right {
+    position: relative;
+    justify-content: center;
+}
+
+#bg {
+    z-index: -1;
+    position:absolute;
+    top:50%;
+    right:-400px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.instructor-wrapper {
+    display:flex;
+    flex-wrap: wrap;
+    gap:24px;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+	.instructor-section {
+		flex-direction: column;
+	}
+}

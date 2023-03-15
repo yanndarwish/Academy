@@ -16,7 +16,7 @@
 	line-height: 68px;
 }
 
-.hero-text span, .search-text span {
+.hero-text span, .search-text span, .instructor-text span  {
 	background: -webkit-linear-gradient(#b176f2, #fac1f1);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
