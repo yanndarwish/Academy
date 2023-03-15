@@ -55,6 +55,7 @@
     flex-wrap: wrap;
     gap:24px;
     justify-content: center;
+    padding-block:10px;
 }
 
 @media screen and (max-width: 1024px) {

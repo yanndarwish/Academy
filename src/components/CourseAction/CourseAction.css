@@ -3,6 +3,7 @@
 }
 
 .course-tag {
+	cursor: pointer;
 	padding-inline: 24px;
 	padding-block: 10px;
 	font-size: var(--button);

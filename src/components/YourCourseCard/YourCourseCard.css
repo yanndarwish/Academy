@@ -1,4 +1,5 @@
 .your-course-card {
+	cursor: pointer;
 	display: flex;
 	padding: 10px;
 	padding-right: 20px;
@@ -11,6 +12,15 @@
 	-ms-border-radius: 12px;
 	-o-border-radius: 12px;
 	background-color: var(--gray);
+	transition: 300ms;
+	-webkit-transition: 300ms;
+	-moz-transition: 300ms;
+	-ms-transition: 300ms;
+	-o-transition: 300ms;
+}
+
+.your-course-card:hover {
+	box-shadow: 5px 5px 5px var(--dark-25);
 }
 
 .your-course-card > img {

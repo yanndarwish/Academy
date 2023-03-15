@@ -17,6 +17,15 @@
     -moz-border-radius: 12px;
     -ms-border-radius: 12px;
     -o-border-radius: 12px;
+    transition: 300ms;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -ms-transition: 300ms;
+    -o-transition: 300ms;
+}
+
+.top-course-action-wrapper .arrow-btn:hover {
+	box-shadow: 5px 5px 5px var(--dark-25);
 }
 
 .top-course-action-wrapper .arrow-btn.active {
