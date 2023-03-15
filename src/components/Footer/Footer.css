@@ -1,0 +1,152 @@
+.footer {
+	display: flex;
+	flex-direction: column;
+	gap: 60px;
+	padding: 20px;
+	margin-top: 150px;
+	border-radius: 40px 40px 0px 0px;
+	background-color: var(--gray);
+}
+
+/* TOP */
+
+.footer .top {
+	display: flex;
+	align-items: center;
+	gap: 55px;
+}
+
+.footer .top .left {
+	z-index: 1;
+	position: relative;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 30px;
+	letter-spacing: 0.25px;
+	text-align: left;
+	padding: 25px;
+	padding-block: 30px;
+	border-radius: 40px;
+	background-color: var(--primary-5);
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	-ms-border-radius: 40px;
+	-o-border-radius: 40px;
+}
+
+.footer .top .left .blob {
+	z-index: -1;
+	position: absolute;
+	top: 0;
+	right: -25px;
+	width: 140px;
+	height: 100%;
+	background: #f5f2fa;
+	border-radius: 59px;
+	transform: matrix(-0.97, -0.24, -0.24, 0.97, 0, 0);
+}
+
+.footer .logo {
+	height: 144px;
+	width: 167px;
+	object-fit: cover;
+}
+
+/* CENTER */
+
+.center {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.center .membership,
+.center .comments,
+.comments .message-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.certificate {
+    border-radius: 12px;
+	width: 468px;
+	height: 360px;
+}
+
+.center .categories,
+.center .quick {
+    display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.footer-link {
+    font-weight:500;
+    font-size:var(--h6);
+    color:var(--dark-75);
+}
+
+.center .list-wrapper {
+    display: flex;
+	flex-direction: column;
+    text-decoration: none;
+	gap: 15px;
+}
+
+.message-wrapper .message {
+    display: flex;
+	flex-direction: column;
+	gap: 8px;
+    padding:16px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    background-color: #F5F5F5;
+}
+
+.message-wrapper .message h5 {
+    font-size: var(--h5)
+}
+
+
+.message-wrapper .message p {
+    text-transform: capitalize;
+    font-size: var(--input-text);
+    color: var(--dark-75)
+}
+
+/* BOTTOM */
+
+.bottom {
+    display:flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding:25px;
+    border-radius: 12px;
+    background-color: #F5F5F5;
+}
+
+.bottom > * {
+    font-size: var(--input-text);
+    text-transform: capitalize;
+    color:var(--dark-75)
+}
+
+@media screen and (max-width: 768px) {
+    .footer .top {
+        flex-direction: column;
+    }
+
+    .footer .top .left .blob {
+        display:none;
+    }
+
+    .certificate {
+        width:100%;
+        height: auto;
+    }
+}

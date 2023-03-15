@@ -1,6 +1,7 @@
 import "./App.css"
 import CourseAction from "./components/CourseAction/CourseAction"
 import CourseSection from "./components/CourseSection/CourseSection"
+import Footer from "./components/Footer/Footer"
 import Header from "./components/Header/Header"
 import Hero from "./components/Hero/Hero"
 import InstructorSection from "./components/InstructorSection/Instructor"
@@ -33,6 +34,7 @@ function App() {
 				<Section title="top courses" action={<TopCourseAction />}>
 					<TopCourseSection />
 				</Section>
+			<Footer />
 			</main>
 		</div>
 	)

@@ -7,6 +7,7 @@ export default function TopCourseSection() {
 		<section className="course-section">
 			{topCourses.map((item) => (
 				<CourseCard
+					key={item.title}
 					title={item.title}
 					lesson={item.lesson}
 					student={item.student}

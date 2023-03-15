@@ -1,73 +1,73 @@
 :root {
-  /* Color styles */
---gray: rgba(250, 250, 250, 1);
---primary: rgba(158, 92, 242, 1);
---primary-75: rgba(158, 92, 242, 0.75);
---primary-50: rgba(158, 92, 242, 0.5);
---primary-25: rgba(158, 92, 242, 0.25);
---primary-10: rgba(158, 92, 242, 0.10000000149011612);
---primary-5: rgba(158, 92, 242, 0.05000000074505806);
---secondary: rgba(255, 153, 31, 1);
---secondary-75: rgba(255, 153, 31, 0.75);
---secondary-50: rgba(255, 153, 31, 0.5);
---secondary-25: rgba(255, 153, 31, 0.25);
---secondary-10: rgba(255, 153, 31, 0.10000000149011612);
---secondary-5: rgba(255, 153, 31, 0.05000000074505806);
---stroke: rgba(241, 241, 241, 1);
---white: rgba(255, 255, 255, 1);
---white-75: rgba(255, 255, 255, 0.75);
---white-50: rgba(255, 255, 255, 0.5);
---white-25: rgba(255, 255, 255, 0.25);
---white-10: rgba(255, 255, 255, 0.10000000149011612);
---white-5: rgba(255, 255, 255, 0.05000000074505806);
---background: rgba(255, 255, 255, 1);
---black: rgba(62, 50, 50, 1);
---black-75: rgba(62, 50, 50, 0.75);
---black-50: rgba(62, 50, 50, 0.5);
---black-25: rgba(62, 50, 50, 0.25);
---black-10: rgba(62, 50, 50, 0.10000000149011612);
---black-5: rgba(62, 50, 50, 0.05000000074505806);
---dark: rgba(8, 8, 8, 1);
---dark-75: rgba(8, 8, 8, 0.75);
---dark-50: rgba(8, 8, 8, 0.5);
---dark-25: rgba(8, 8, 8, 0.25);
---dark-10: rgba(8, 8, 8, 0.10000000149011612);
---dark-5: rgba(8, 8, 8, 0.05000000074505806);
---green: rgba(0, 158, 104, 1);
---light--green: rgba(235, 250, 245, 1);
---red: rgba(255, 60, 49, 1);
---light--red: rgba(255, 245, 245, 1);
---‌-blue: rgba(90, 105, 242, 1);
---light-‌-blue: rgba(246, 247, 254, 1);
+	/* Color styles */
+	--gray: rgba(250, 250, 250, 1);
+	--primary: rgba(158, 92, 242, 1);
+	--primary-75: rgba(158, 92, 242, 0.75);
+	--primary-50: rgba(158, 92, 242, 0.5);
+	--primary-25: rgba(158, 92, 242, 0.25);
+	--primary-10: rgba(158, 92, 242, 0.10000000149011612);
+	--primary-5: rgba(158, 92, 242, 0.05000000074505806);
+	--secondary: rgba(255, 153, 31, 1);
+	--secondary-75: rgba(255, 153, 31, 0.75);
+	--secondary-50: rgba(255, 153, 31, 0.5);
+	--secondary-25: rgba(255, 153, 31, 0.25);
+	--secondary-10: rgba(255, 153, 31, 0.10000000149011612);
+	--secondary-5: rgba(255, 153, 31, 0.05000000074505806);
+	--stroke: rgba(241, 241, 241, 1);
+	--white: rgba(255, 255, 255, 1);
+	--white-75: rgba(255, 255, 255, 0.75);
+	--white-50: rgba(255, 255, 255, 0.5);
+	--white-25: rgba(255, 255, 255, 0.25);
+	--white-10: rgba(255, 255, 255, 0.10000000149011612);
+	--white-5: rgba(255, 255, 255, 0.05000000074505806);
+	--background: rgba(255, 255, 255, 1);
+	--black: rgba(62, 50, 50, 1);
+	--black-75: rgba(62, 50, 50, 0.75);
+	--black-50: rgba(62, 50, 50, 0.5);
+	--black-25: rgba(62, 50, 50, 0.25);
+	--black-10: rgba(62, 50, 50, 0.10000000149011612);
+	--black-5: rgba(62, 50, 50, 0.05000000074505806);
+	--dark: rgba(8, 8, 8, 1);
+	--dark-75: rgba(8, 8, 8, 0.75);
+	--dark-50: rgba(8, 8, 8, 0.5);
+	--dark-25: rgba(8, 8, 8, 0.25);
+	--dark-10: rgba(8, 8, 8, 0.10000000149011612);
+	--dark-5: rgba(8, 8, 8, 0.05000000074505806);
+	--green: rgba(0, 158, 104, 1);
+	--light--green: rgba(235, 250, 245, 1);
+	--red: rgba(255, 60, 49, 1);
+	--light--red: rgba(255, 245, 245, 1);
+	--‌-blue: rgba(90, 105, 242, 1);
+	--light-‌-blue: rgba(246, 247, 254, 1);
 
-/* Text-size styles */
---h1: 36px;
---h2: 31px;
---h3: 25px;
---h4: 20px;
---h5: 16px;
---h6: 13px;
---subtitle: 16px;
---subtitle-2: 14px;
---body: 16px;
---body-2: 14px;
---button: 14px;
---input-text: 12px;
---overline: 10px;
---paragraph: 14px;
---larg--paragraph: 18px;
+	/* Text-size styles */
+	--h1: 36px;
+	--h2: 31px;
+	--h3: 25px;
+	--h4: 20px;
+	--h5: 16px;
+	--h6: 13px;
+	--subtitle: 16px;
+	--subtitle-2: 14px;
+	--body: 16px;
+	--body-2: 14px;
+	--button: 14px;
+	--input-text: 12px;
+	--overline: 10px;
+	--paragraph: 14px;
+	--larg--paragraph: 18px;
 }
 
 #root {
-  font-family: Roboto, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  margin: 0 auto;
-  padding: 0;
+	font-family: Roboto, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	margin: 0 auto;
+	padding: 0;
 }
 
 * {
-  box-sizing: border-box;
-  margin:0;
-  padding:0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 body {
@@ -78,21 +78,25 @@ ul {
 	list-style: none;
 }
 
+a {
+	color: inherit;
+	text-decoration: inherit;
+}
+
 .divider {
-  height: 1px;
-  width: 100vw;
-  background-color: var(--stroke);
+	height: 1px;
+	width: 100vw;
+	background-color: var(--stroke);
 }
 
 main {
-  margin: 0 auto;
+	margin: 0 auto;
 	max-width: 1280px;
-  padding-inline: 20px;
+	padding-inline: 20px;
 }
 
 @media screen and (max-width: 1280px) {
 	main {
-		  overflow: hidden;
-
+		overflow: hidden;
 	}
 }
