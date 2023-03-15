@@ -5,6 +5,7 @@
 }
 
 .section-header {
+    position:relative;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -18,7 +19,7 @@
 
 .dot {
     position:absolute;
-    left: 10px;
+    left: -10px;
     background-color: var(--primary);
     height:4px;
     aspect-ratio: 1;

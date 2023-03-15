@@ -1,0 +1,24 @@
+.top-course-action-wrapper {
+    display:flex;
+    gap: 25px;
+}
+
+.top-course-action-wrapper .arrow-btn {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:40px;
+    aspect-ratio: 1;
+    color: var(--dark-50);
+    background-color: var(--gray);
+    cursor: pointer;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.top-course-action-wrapper .arrow-btn.active {
+    color:black;
+}
