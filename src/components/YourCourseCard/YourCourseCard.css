@@ -1,0 +1,142 @@
+.your-course-card {
+	display: flex;
+	padding: 10px;
+	padding-right: 20px;
+	gap: 16px;
+	width: 744px;
+	height: 260px;
+	border-radius: 12px;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	-ms-border-radius: 12px;
+	-o-border-radius: 12px;
+	background-color: var(--gray);
+}
+
+.your-course-card > img {
+	height: 240px;
+	width: 340px;
+	object-fit: cover;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+
+.your-course-card-bottom {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	overflow: hidden;
+     white-space: nowrap;
+
+}
+
+.your-course-card-bottom .card-title {
+	padding-block: 16px;
+     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.your-course-card-bottom .card-info {
+	padding: 14px, 30px, 26px, 0px;
+}
+
+.progression {
+    display:flex;
+    flex-direction: column;
+    gap:8px;
+	padding-top: 12px;
+    padding-bottom: 36px;
+}
+
+.progress {
+    position:relative;
+}
+
+.progress-bar {
+    position: absolute;
+    width:100%;
+    border: 1px dashed var(--black-10);
+}
+
+.actual-progress {
+    position:relative;
+    background: linear-gradient(90deg,#FFF1E0, #FFC887);
+    width:50%;
+    height:3px;
+    transition: 500ms;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+}
+
+.progress-point {
+    position:absolute;
+    top:50%;
+    right:0;
+    transform: translateY(-50%);
+    width:9px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: var(--secondary);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.progress-info {
+	display: flex;
+	justify-content: space-between;
+}
+
+.your-course-card-footer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.professor-section {
+	display: flex;
+	gap: 10px;
+}
+
+.professor-section > img {
+	width: 44px;
+	aspect-ratio: 1;
+	object-fit: cover;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+
+.professor-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+
+@media screen and (max-width: 768px) {
+	.your-course-card {
+		flex-direction: column;
+        height:fit-content;
+        padding:10px;
+        padding-bottom: 20px;
+	}
+
+    .your-course-card-bottom {
+        max-width: 360px;
+    }
+
+}

@@ -1,0 +1,6 @@
+.your-course-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap:24px;
+    justify-content: center;
+}
