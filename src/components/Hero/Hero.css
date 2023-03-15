@@ -14,6 +14,9 @@
 	font-size: 40px;
 	max-width: 620px;
 	line-height: 68px;
+	animation: appearUp 1s ease-in-out both;
+	-webkit-animation: appearUp 1s ease-in-out both;
+	animation-delay: 1.3s;
 }
 
 .hero-text span, .search-text span, .instructor-text span  {
@@ -27,6 +30,9 @@
 	position: relative;
 	display: flex;
 	gap: 20px;
+	animation: appear 1.2s ease-in-out both;
+	-webkit-animation: appear 1.2s ease-in-out both;
+	animation-delay: 1.9s;
 }
 
 .cta-wrapper .icons {
@@ -71,6 +77,9 @@
 	position: relative;
 	flex: 1;
 	justify-content: flex-end;
+	animation: appearLeft 1s ease-in-out both;
+	-webkit-animation: appearLeft 1s ease-in-out both;
+	animation-delay: 0.9s;
 }
 
 .right .ellipse {
@@ -142,6 +151,50 @@
   -ms-animation: rotating 30s linear infinite;
   -o-animation: rotating 30s linear infinite;
   animation: rotating 30s linear infinite;
+}
+
+@keyframes appearUp {
+	0% {
+		opacity: 0;
+		transform: translateY(20%);
+		-webkit-transform: translateY(20%);
+		-moz-transform: translateY(20%);
+		-ms-transform: translateY(20%);
+		-o-transform: translateY(20%);
+}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+		-webkit-transform: translateY(0);
+		-moz-transform: translateY(0);
+		-ms-transform: translateY(0);
+		-o-transform: translateY(0);
+	}
+}
+
+@keyframes appearLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(20%);
+		-webkit-transform: translateX(20%);
+		-moz-transform: translateX(20%);
+		-ms-transform: translateX(20%);
+		-o-transform: translateX(20%);
+}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+		-webkit-transform: translateX(0);
+		-moz-transform: translateX(0);
+		-ms-transform: translateX(0);
+		-o-transform: translateX(0);
+}
 }
 
 @keyframes rotating {

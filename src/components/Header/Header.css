@@ -3,10 +3,12 @@ header {
 	max-width: 1280px;
 	padding: 20px;
 	padding-block: 35px;
+	animation: appear 1s ease-in-out forwards;
+	-webkit-animation: appear 1s ease-in-out forwards;
 }
 
 header .container {
-	position:relative;
+	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -59,6 +61,32 @@ header .container {
 	display: none;
 }
 
+.divider {
+	animation: appear 1s ease-in-out forwards;
+}
+
+@keyframes appear {
+	0% {
+		opacity: 0;
+		transform: translateY(-100%);
+		-webkit-transform: translateY(-100%);
+		-moz-transform: translateY(-100%);
+		-ms-transform: translateY(-100%);
+		-o-transform: translateY(-100%);
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+		-webkit-transform: translateY(0);
+		-moz-transform: translateY(0);
+		-ms-transform: translateY(0);
+		-o-transform: translateY(0);
+	}
+}
+
 @media screen and (max-width: 1220px) {
 	.nav-list {
 		width: 40vw;
@@ -69,14 +97,14 @@ header .container {
 	}
 
 	header .input-wrapper > input {
-		display:none;
+		display: none;
 	}
 }
 
 @media screen and (max-width: 768px) {
-    .container .left {
-        justify-content: space-between;
-    }
+	.container .left {
+		justify-content: space-between;
+	}
 
 	.sidebar-btn {
 		display: block;
@@ -84,66 +112,66 @@ header .container {
 
 	.sidebar {
 		display: none;
-        position:fixed;
-        top:0;
-        left: 0;
-        bottom:0;
-		z-index:100;
-        width: max(40vw, 400px);
-        height: 100%;
-        padding:20px;
-		padding-block:35px;
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		z-index: 100;
+		width: max(40vw, 400px);
+		height: 100%;
+		padding: 20px;
+		padding-block: 35px;
 		flex-direction: column-reverse;
-        justify-content: flex-end;
-        background-color: white;
+		justify-content: flex-end;
+		background-color: white;
 	}
 
-    .sidebar nav {
-        height:100%;
-    }
+	.sidebar nav {
+		height: 100%;
+	}
 
 	.nav-list {
 		flex-direction: column;
-        height: 100%;
-        justify-content: space-around;
+		height: 100%;
+		justify-content: space-around;
 	}
 
-    .nav-item {
-        font-size: 32px;
-    }
+	.nav-item {
+		font-size: 32px;
+	}
 
 	header .input-wrapper {
 		width: 100%;
-        justify-content: space-between;
+		justify-content: space-between;
 	}
 
 	header .input-wrapper > input {
-		display:block;
+		display: block;
 	}
 
-    .right {
-        width:100%;
-        flex-direction: column-reverse;
-        gap: 35px;
-    }
+	.right {
+		width: 100%;
+		flex-direction: column-reverse;
+		gap: 35px;
+	}
 
-    .separator {
-        width: 100%;
-        height: 1px;
-    }
+	.separator {
+		width: 100%;
+		height: 1px;
+	}
 
 	.backdrop {
-		display:none;
-		z-index:99;
-		position:fixed;
-		top:0;
+		display: none;
+		z-index: 99;
+		position: fixed;
+		top: 0;
 		left: 0;
-		bottom:0;
+		bottom: 0;
 		right: 0;
 		background-color: var(--dark-50);
 	}
 
 	.open {
-        display:flex;
-    }
+		display: flex;
+	}
 }

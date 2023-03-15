@@ -4,6 +4,7 @@ import book from "../../assets/icons/book.png"
 import person from "../../assets/icons/person.png"
 import level from "../../assets/icons/level.png"
 import Button from "../Button/Button"
+import { useRef, useEffect, useState } from "react"
 
 export interface ICourseCardProps {
 	title: string
@@ -15,8 +16,30 @@ export interface ICourseCardProps {
 }
 
 export default function CourseCard(props: ICourseCardProps) {
+	const [isVisible, setIsVisible] = useState(false)
+	const ref = useRef<HTMLDivElement | null>(null)
+
+	useEffect(() => {
+		if (ref.current) {
+			const observer = new IntersectionObserver((entries) => {
+				const entry = entries[0]
+				setIsVisible(entry.isIntersecting)
+			})
+			observer.observe(ref.current)
+		}
+	}, [])
+
+	useEffect(() => {
+		if (ref.current) {
+			if(isVisible) {
+				ref.current.classList.add('appearUp')
+			} else {
+				ref.current.classList.remove('appearUp')
+			}
+		}
+	}, [isVisible])
 	return (
-		<article className="course-card">
+		<article ref={ref} className="course-card">
 			<img src={props.img} alt={props.title} />
 			<div className="course-card-bottom">
 				<h5 className="card-title">{props.title}</h5>

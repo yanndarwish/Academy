@@ -1,7 +1,9 @@
 .tag-section {
     position:relative;
     padding-block:35px;
-    
+    animation: appear 1s ease-in-out both;
+    -webkit-animation: appear 1s ease-in-out both;
+    animation-delay: 0.4s;
 }
 
 .tag-section .wrapper {
