@@ -21,14 +21,14 @@ const TagSection = () => {
 			refs[2].current?.scrollIntoView({
 				behavior: "smooth",
 				block: "nearest",
-				inline: "center",
+				inline: "nearest",
 			})
 		} else {
 			setIndex(index - 1)
 			refs[index - 1].current?.scrollIntoView({
 				behavior: "smooth",
 				block: "nearest",
-				inline: "center",
+				inline: "nearest",
 			})
 		}
 	}
@@ -39,14 +39,14 @@ const TagSection = () => {
 			refs[0].current?.scrollIntoView({
 				behavior: "smooth",
 				block: "nearest",
-				inline: "center",
+				inline: "nearest",
 			})
 		} else {
 			setIndex(index + 1)
 			refs[index + 1].current?.scrollIntoView({
 				behavior: "smooth",
 				block: "nearest",
-				inline: "center",
+				inline: "nearest",
 			})
 		}
 	}
